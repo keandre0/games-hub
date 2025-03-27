@@ -1,0 +1,8 @@
+body {
+    background-image: url('background/background.PNG'); /* Ganti sesuai lokasi gambar */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+  }
+  
