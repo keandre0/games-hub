@@ -1,25 +1,31 @@
 body {
-    background-image: url('background/background.PNG'); /* Ganti sesuai lokasi gambar */
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    color: white;
-  }
-  @keyframes wave-border {
-    0% {
-        border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-    }
-    50% {
-        border-image-source: linear-gradient(90deg, #00ffff, #ff00ff);
-    }
-    100% {
-        border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-    }
+  background-image: url('background/background.PNG'); /* Ganti sesuai lokasi gambar */
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  color: white;
 }
 
-.table-wave {
-    border: 5px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-    animation: wave-border 2s infinite linear;
+/* Animasi Wave Effect untuk Semua Tabel */
+@keyframes wave-border {
+  0% {
+      border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
+  }
+  50% {
+      border-image-source: linear-gradient(90deg, #00ffff, #ff00ff);
+  }
+  100% {
+      border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
+  }
 }
+
+table {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
+  animation: wave-border 2s infinite linear;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
