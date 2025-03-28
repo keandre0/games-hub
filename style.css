@@ -6,26 +6,28 @@ body {
   color: white;
 }
 
-/* Animasi Wave Effect untuk Semua Tabel */
 @keyframes wave-border {
-  0% {
-      border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-  }
-  50% {
-      border-image-source: linear-gradient(90deg, #00ffff, #ff00ff);
-  }
-  100% {
-      border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-  }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-table {
-  border: 5px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, #ff00ff, #00ffff);
-  animation: wave-border 2s infinite linear;
-  margin: auto;
-  width: 80%;
+.table-wave {
+    position: relative;
+    border: 5px solid transparent;
+}
+
+.table-wave::before {
+    content: "";
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 200% 200%;
+    z-index: -1;
+    border-radius: 10px;
+    animation: wave-border 3s infinite linear;
+}
+
   text-align: center;
 }
 
