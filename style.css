@@ -39,7 +39,7 @@ body {
 }
 
 .game-card:hover {
-    transform: scale(1.05); /* Membesar dikit pas di-hover */
+    transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 255, 204, 0.6); /* Glow makin terang */
 }
 
