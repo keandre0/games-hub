@@ -30,4 +30,26 @@ body {
 
   text-align: center;
 }
+.game-card {
+    background-color: #1a1a1a; /* Warna latar */
+    padding: 20px;
+    border-radius: 15px; /* Biar sudutnya agak membulat */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2); /* Glow tipis */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* Membesar dikit pas di-hover */
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.6); /* Glow makin terang */
+}
+
+.game-card h2 a {
+    color: #00ffcc; /* Warna teks */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.game-card h2 a:hover {
+    color: #ffffff; /* Warna teks berubah pas di-hover */
+}
 
