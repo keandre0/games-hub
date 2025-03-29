@@ -52,4 +52,36 @@ body {
 .game-card h2 a:hover {
     color: #ffffff; /* Warna teks berubah pas di-hover */
 }
+.trailer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.trailer {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trailer h2 {
+    margin-bottom: 10px;
+}
+
+.trailer iframe {
+    width: 400px;
+    height: 225px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trailer:hover {
+    transform: scale(1.05);
+}
+
+.trailer:hover iframe {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
 
