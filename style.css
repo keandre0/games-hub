@@ -35,7 +35,7 @@ body {
     padding: 20px;
     border-radius: 15px; /* Biar sudutnya agak membulat */
     box-shadow: 0 0 10px rgba(0, 255, 204, 0.2); /* Glow tipis */
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .game-card:hover {
